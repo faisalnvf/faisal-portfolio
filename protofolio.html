@@ -1,0 +1,138 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Faisal's Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+      font-family: 'Inter', sans-serif;
+    }body {
+  background-color: #f8f9fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  padding: 3rem 2rem;
+  text-align: center;
+  background-color:rgb(44, 24, 159);
+  color: white;
+}
+
+header h1 {
+  font-size: 2.5rem;
+}
+
+header p {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+
+section {
+  padding: 4rem 2rem;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color:rgb(44, 24, 159);
+  text-align: center;
+}
+
+#projects .card,
+#certificates .card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  margin: 1rem;
+  min-width: 250px;
+  max-width: 300px;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.cards-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+  padding-bottom: 1rem;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+}
+
+footer {
+  padding: 2rem;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+  </style>
+</head>
+<body>
+  <header data-aos="fade-down">
+    <h1>Faisal</h1>
+    <p>A passionate developer who loves building modern web experiences.</p>
+  </header>  <section id="projects" data-aos="fade-up">
+    <h2 class="section-title">Projects</h2>
+    <div class="cards-container">
+      <div class="card" data-aos="zoom-in">
+        <img src="project1.jpg" alt="Project 1">
+        <h3>Agri-Pulse</h3>
+        <p>Short description about the project.</p>
+      </div>
+      <div class="card" data-aos="zoom-in" data-aos-delay="100">
+        <img src="project2.jpg" alt="Project 2">
+        <h3>Project Title</h3>
+        <p>Short description about the project.</p>
+      </div>
+      <!-- Add more project cards here -->
+    </div>
+  </section>  <section id="skills" data-aos="fade-up">
+    <h2 class="section-title">Skills</h2>
+    <ul style="text-align: center; list-style: none; font-size: 1.1rem;">
+      <li>HTML, CSS, JavaScript</li>
+      <li>Machine Learning (basic)</li>
+      <li>Public Speaking, Training (ToT)</li>
+    </ul>
+  </section>  <section id="certificates" data-aos="fade-up">
+    <h2 class="section-title">Certificates</h2>
+    <div class="cards-container">
+      <div class="card" data-aos="flip-left">
+        <img src="cert1.jpg" alt="Certificate 1">
+        <h3>level one DECi</h3>
+        <p>initiative from the ministry of communication and ELMENTOR that learn the basics of programming</p>
+      </div>
+      <div class="card" data-aos="flip-left" data-aos-delay="100">
+        <img src="cert2.jpg" alt="Certificate 2">
+        <h3> TOT (cisco instructor)</h3>
+        <p> tot certificate from ministry of Learning and educate and cisco academy</p>
+      </div>
+      <!-- Add more certificate cards here -->
+    </div>
+  </section>  <footer data-aos="fade-up">
+    <p>Contact: fisolgamer@gmail.com</p>
+    <p>   </p>
+  </footer>  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script></body>
+</html>
