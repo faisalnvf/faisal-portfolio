@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: white;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid white;
+}
+
+.about, .certificates, footer {
+  padding: 2rem;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+h2 {
+  color: #6a11cb;
+}
+
+.card-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+  padding: 1rem 0;
+  scroll-snap-type: x mandatory;
+}
+
+.card {
+  min-width: 250px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 1rem;
+  scroll-snap-align: center;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+footer {
+  background:linear-gradient(to right, #6a11cb, #2575fc);
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+  position: relative;
+}
+
+.whatsapp-icon {
+  color: #25d366;
+  margin-top: 1rem;
+  transition: transform 0.3s;
+}
+
+.whatsapp-icon:hover {
+  transform: scale(1.2);
+}
+.facebook-icon {
+  color: #0422e0;
+  margin-top: 1rem;
+  transition: transform 0.3s;
+}
+
+.facebook-icon:hover {
+  transform: scale(1.2);
+}
